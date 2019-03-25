@@ -1,0 +1,18 @@
+<div class="login-form">
+  <form (submit)="onLogin()">
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="Username" class="form-control" name="username" [(ngModel)]="username">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" class="form-control" name="password" [(ngModel)]="password">
+      </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+      <button routerLink="/register">Register</button>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,41 @@
+<div class="jumbotron text-center">
+  <h1>MEAN APP</h1>
+  <p class="lead">
+    We welcome you to our mean test app.
+    I hope you encounter some errors,
+    so help you GOD. <br>
+    AMEN!
+  </p>
+  <div *ngIf="authService.loggedIn()">
+    <a class="btn btn-primary mr-3" [routerLink]="[ '/register' ]">Register</a>
+    <a class="btn btn-primary" [routerLink]="[ '/login' ]">Login</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>
+        Express Backend
+      </h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quibusdam optio incidunt quos nesciunt, repellat,
+        nam eligendi reiciendis rerum id voluptas repellendus? Autem, dolore sed. Ex, dicta molestiae. Obcaecati, minus.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3>
+        Angular-2
+      </h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quibusdam optio incidunt quos nesciunt, repellat,
+        nam eligendi reiciendis rerum id voluptas repellendus? Autem, dolore sed. Ex, dicta molestiae. Obcaecati, minus.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h3>
+        MongoDB
+      </h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quibusdam optio incidunt quos nesciunt, repellat,
+        nam eligendi reiciendis rerum id voluptas repellendus? Autem, dolore sed. Ex, dicta molestiae. Obcaecati, minus.
+      </p>
+    </div>
+  </div>
+</div>

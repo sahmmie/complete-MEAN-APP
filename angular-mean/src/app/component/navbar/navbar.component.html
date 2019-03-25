@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="[ '/' ]" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">Mean-App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="[ '/' ]" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="!authService.loggedIn()">
+          <a class="nav-link" [routerLink]="[ '/dashboard' ]" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+        </li>
+        <li class="nav-item" *ngIf="!authService.loggedIn()">
+          <a class="nav-link" [routerLink]="[ '/profile' ]" [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active">Profile</a>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item" *ngIf="authService.loggedIn()">
+          <a class="nav-link" [routerLink]="[ '/login' ]" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="authService.loggedIn()">
+          <a class="nav-link" [routerLink]="[ '/register' ]" [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active">Register</a>
+        </li>
+        <li class="nav-item" *ngIf="!authService.loggedIn()">
+          <a class="nav-link" (click)="onLogout()" href="javascript:void(0)">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

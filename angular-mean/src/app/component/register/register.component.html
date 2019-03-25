@@ -1,0 +1,25 @@
+<!-- <div class="container mt-5"> -->
+    <div class="form-wrapper mt-5">
+        <form (submit)="register()">
+          <h1>Sign up</h1>
+          <div class="input-wrapper form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="name" name="name">
+          </div>
+          <div class="input-wrapper form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" [(ngModel)]="username" name="username">
+          </div>
+          <div class="input-wrapper form-group">
+            <label for="email">Email</label>
+            <input type="email"  class="form-control" [(ngModel)]="email" name="email">
+          </div>
+          <div class="input-wrapper form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="password" name="password" >
+          </div>
+          <button class="submit" value="submit" type="submit">Register</button>
+        </form>
+      </div>
+<!-- </div> -->
+

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  box-shadow: 1px 1px 9px -3px;
+}
+
+.p {
+  border: 2px #e8e8e8;
+  border-style: dotted;
+  border-radius: 10px;
+  padding: 25px;
+}
+.name {
+  font-size: 15pt;
+}
+
+.role {
+  font-size: 10pt;
+  padding: 4pt;
+}
+
+.profile .avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 10px;
+  border: 1px solid #9876ff;
+  animation: colors 2s infinite;
+}
+
+@keyframes colors {
+  from {
+    border-color: #76b9ff;
+  }
+  25% {
+    border-color: #76ffdf;
+  }
+  50% {
+    border-color: #78ff76;
+  }
+  75% {
+    border-color: #ffdb76;
+  }
+  to {
+    border-color: #76b9ff;
+  }
+}
+
+.socials {
+  display: flex;
+  margin-top: 4pt;
+  color: black;
+  justify-content: space-evenly;
+}
+
+.socials a, .socials a:visited {
+  color: black;
+}
+
+.playground {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
